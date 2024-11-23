@@ -1,0 +1,151 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+  } 
+  /* body setting*/
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6; ;
+    background-color: #f8f9fa;
+    color:#333;
+} 
+:root{
+   --main-color: rgb(235, 235, 13);
+   --dark-color: black;
+   --gray-color:rgb(68, 66, 66);
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: var(--dark-color);
+}
+p{
+    color: var(--gray-color);
+}
+
+ .navbar{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 15px;
+    height: 80px;
+   
+}
+
+
+ .navbar img{
+    
+    height: 35px; 
+    
+}
+.navbar a:hover{
+    background-color: rgb(202, 202, 36);
+    border-radius: 8px;
+}
+
+.navbar  a{ text-decoration: none;
+    color: rgb(24, 19, 19);
+    text-transform: uppercase;/* texte majuscil*/
+    padding: 14px 30px;
+    font-weight:900;/*texte gras*/
+    font-size: 1.5rem;
+   
+} 
+ 
+.presentation{
+    padding: 50px 20px;
+    text-align: center;
+    background-color:rgb(187, 187, 44);
+}
+.presentation .ti{
+    font-size: 1.2rem;
+    color: #0a0909;
+}
+.presentation p{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.produits{
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+}
+.produits h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    gap: 20px;
+}
+.produit{
+    background-color: white;
+    padding:20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0,0, 0.1);/* del */
+  
+}
+.produit img{
+    width: 100%;
+    border-radius: 8px;
+    height: 70%;
+}
+.produit h3{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #0a0909;
+} 
+.produit button{
+    background-color: #0a0909;
+    color: #eee;
+    height: 50px;
+    width: 100px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.grid-container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));/*responseve*/
+    gap: 20px;
+}
+.button{
+    cursor: pointer;
+}
+.carttab{
+    background-color: #333;
+    color: #eee;
+    width: 400px;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+}
+.carttab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.carttab .btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.carttab .btn button{
+    background-color: rgb(187, 187, 44);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+.carttab .btn button .close{
+    background-color: #eee;
+}
+.carttab .listcart{
+    overflow: auto;
+}
+.carttab .listcart::-webkit-scrollbar{
+    width: 0;
+}
